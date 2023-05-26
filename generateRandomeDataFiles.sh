@@ -4,7 +4,6 @@ generate_file() {
   size=$1
   filename="random_${size}.dat"
   dd if=/dev/urandom of="${filename}" bs="${size}" count=1
-
 }
 
 generate_file 100k
